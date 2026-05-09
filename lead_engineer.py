@@ -1,6 +1,9 @@
 """
 Orchestration logic & Director Gates for the Lead Systems Engineer using LangGraph.
 """
+from dotenv import load_dotenv
+load_dotenv()
+
 from typing import TypedDict, Annotated, Optional
 import operator
 from langgraph.graph import StateGraph, START, END
