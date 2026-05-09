@@ -2,7 +2,7 @@
 Agent logic for the Backend Developer.
 """
 from typing import Dict, Any
-from langchain_google_vertexai import ChatVertexAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from crew_configs import BACKEND_DEVELOPER_INSTRUCTION
 
@@ -16,7 +16,7 @@ def developer_node(state: dict) -> dict:
     print("Backend Developer generating code based on intent...")
     
     # Using Vertex AI Gemini 1.5 Flash as requested for the developer
-    model = ChatVertexAI(model="gemini-1.5-flash", temperature=0.1)
+    model = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.1)
     
     intent = state.get("user_intent", "")
     ncr_reports = state.get("ncr_reports", "")
