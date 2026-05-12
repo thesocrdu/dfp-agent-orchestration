@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFP Agent Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <div class="pulse-ring"></div>
+                <h1>DFP Orchestrator</h1>
+            </div>
+            <div class="status-badge connected">System Online</div>
+        </header>
+
+        <main class="chat-container">
+            <div id="message-list" class="message-list">
+                <div class="message system">
+                    <div class="avatar">🤖</div>
+                    <div class="content">
+                        <p>Welcome, Director. The Digital Picture Frame Program Office is ready. Please input your target intent to begin a sprint.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="approval-widget" class="approval-widget hidden">
+                <p>⚠️ Maintenance Window Approval Required</p>
+                <button id="approve-btn" class="approve-btn">AUTHORIZE (APPROVE)</button>
+            </div>
+
+            <div class="input-area">
+                <textarea id="intent-input" placeholder="Enter target intent or report a fault..." rows="1"></textarea>
+                <button id="send-btn" class="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

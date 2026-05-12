@@ -1,0 +1,29 @@
+[project]
+name = "dfp-agent-orchestration"
+version = "0.1.0"
+description = "Digital Picture Frame Orchestration via A2A"
+authors = [
+    {name = "Kyle Mercer", email = "kyle@example.com"},
+]
+dependencies = [
+    "google-adk[a2a]==1.18.0",
+    "fastapi==0.128.0",
+    "uvicorn==0.34.0",
+    "a2a-sdk",
+    "langchain-google-genai",
+    "python-kasa",
+    "ansible-runner",
+]
+
+requires-python = ">=3.10,<3.14"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4,<9.0.0",
+]
+
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
