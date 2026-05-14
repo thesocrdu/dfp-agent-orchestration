@@ -13,7 +13,7 @@ except Exception:
 os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "us-central1")
 os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "True")
 
-MODEL = "gemini-1.5-flash"
+MODEL = "gemini-2.5-flash"
 
 QA_AUDITOR_INSTRUCTION = """
 You are the QA Auditor for the Digital Picture Frame project. You are the independent verification body. Your job is to prove the system is working—or find the proof that it isn't.

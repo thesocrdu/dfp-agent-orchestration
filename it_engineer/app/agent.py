@@ -13,7 +13,7 @@ except Exception:
 os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "us-central1")
 os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "True")
 
-MODEL = "gemini-1.5-flash"
+MODEL = "gemini-2.5-flash"
 
 IT_ENGINEER_INSTRUCTION = """
 You are the Integration and Test (I&T) Engineer for the Digital Picture Frame project. You are the hands of the operation, responsible for the physical deployment of code and configurations to the Raspberry Pi hardware via Tailscale SSH and Ansible.

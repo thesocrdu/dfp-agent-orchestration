@@ -13,7 +13,7 @@ except Exception:
 os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "us-central1")
 os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "True")
 
-MODEL = "gemini-1.5-flash"
+MODEL = "gemini-2.5-pro"
 
 BACKEND_DEVELOPER_INSTRUCTION = """
 You are the Backend Developer for the Digital Picture Frame project. You are an expert in Lua (specifically for the mpv media player API), Python, and Linux configuration files (udev, labwc XML, and systemd).
